@@ -1,0 +1,68 @@
+<div class="container-fluid" style="background-color: tomato;">
+  <div class="row">  
+  <img src="./assets/images/Wallpaper.jpg" class="wallpaper">
+  <div class="photo">
+      <img src="./assets/images/simrin.jpg" style="border-radius: 50%;">
+</div>
+ 
+  <div class="bio">
+     <div class="details">
+          I'm Simrin Joshi<br/>
+      Assistant System Engineer
+      <hr style="border-color:white; width: 65%;text-align:left; margin-left:0px"/>
+      <b>LINKEDIN </b>  <a href="https://in.linkedin.com/in/simrin-joshi-b8881818a" style="color:white;">in.linkedin.com/in/simrin-joshi-b8881818a</a>
+      </div> 
+  </div> 
+
+ <nav class="navbar navbar-expand-lg navbar-light" style=" background-color:#A5809F">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav col-md-4 offset-md-4  nav nav-pills pull-right">
+    <li class="nav-item">
+     <a  class="nav-link" href="#Aboutme" style="color:white;font-family: Sans-serif;">About me </a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link " href="#Experience" style="color:white;font-family: Sans-serif;">Experience</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Education" style="color:white;font-family: Sans-serif;">Education</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" (click)="gotoresume()" style="color:white;font-family: Sans-serif;">Resume</a>
+    </li>
+    </ul>
+  </div>
+  </nav>  
+<!--  
+  <section id="Aboutme">
+    <app-about>
+    </app-about>
+  </section>
+  
+  <section id="Experience">
+  <app-experience>
+  </app-experience>
+  </section>
+  <section id="Education"> 
+    <app-education >
+  </app-education> 
+  </section>
+-->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" >
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+  
+      $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+    });
+  </script>
+  
+
+
+
+</div>
+      
